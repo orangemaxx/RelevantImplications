@@ -1,1 +1,1 @@
-"# RelevantImplications" 
+# RelevantImplications 
