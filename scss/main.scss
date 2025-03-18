@@ -82,5 +82,21 @@
 
 
 .main-navbar {
-    background-color: $green-400;
+    background-color: #4a4238;
 }
+
+// Making container
+@mixin make-container($padding-x: $container-padding-x, $bg-color) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $bg-color;
+}
+  
+  // Usage
+.page-header {
+    @include make-container($bg-color: #4d5359);
+}
+  

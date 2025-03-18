@@ -14148,7 +14148,16 @@ textarea.form-control-lg {
   }
 }
 .main-navbar {
-  background-color: rgb(71, 159, 118.2);
+  background-color: #4a4238;
+}
+
+.page-header {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #4d5359;
 }
 
 /*# sourceMappingURL=main.css.map */
