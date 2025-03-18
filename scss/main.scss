@@ -86,17 +86,17 @@
 }
 
 // Making container
-@mixin make-container($padding-x: $container-padding-x, $bg-color) {
+@mixin make-container($padding-x: $container-padding-x, $container-bg) {
     width: 100%;
     padding-right: $padding-x;
     padding-left: $padding-x;
     margin-right: auto;
     margin-left: auto;
-    background-color: $bg-color;
+    background-color: $container-bg;
 }
   
   // Usage
 .page-header {
-    @include make-container($bg-color: #4d5359);
+    @include make-container($container-bg: #4d5359);
 }
   
