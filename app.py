@@ -1,6 +1,7 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 import os
 import json
+import shutil
 
 with open("pages.json", "r") as file:
     pages = json.load(file)
@@ -8,10 +9,9 @@ with open("pages.json", "r") as file:
 
 app = Flask(__name__)
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html", name="Relevent Implications")
-
+@app.route("/")
+def index():
+    return "Your static site has been generated in build/"
 
 def savefile(filename, args):
     current_dir = os.path.dirname(__file__)
@@ -23,5 +23,7 @@ with app.app_context():
     for page in pages:
         args = pages[page]
         savefile(page, args)
+    shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
+    shutil.copytree("static/", "build/static", dirs_exist_ok=True)
 
 app.run(debug=True)
