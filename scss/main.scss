@@ -83,6 +83,9 @@
 //     background-color: $green-400;
 // }
 
+* {
+    scroll-behavior: smooth;
+}
 
 .main-navbar {
     background-color: #4a4238;
@@ -97,5 +100,8 @@
 //     margin-left: auto;
 //     background-color: $container-bg;
 // }
-  
+.bg-image {
+    filter: blur(8px);
+    // backdrop-filter: blur(8px);
+}
   

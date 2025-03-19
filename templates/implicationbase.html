@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="p-5 text-white text-center container-fluid bg-lime">
+    <h1>{{pageheader}}</h1>
+    <h5>{{description}}</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="#sectionone" class="btn btn-ash btn-lg">implication one</a>
+            </div>
+            <div class="col">
+                <a href="#sectiontwo" class="btn btn-ash btn-lg">thingymajig 2</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- Setup the page for further use -->
+{% block implication %}
+{% endblock %}
+{% endblock %}

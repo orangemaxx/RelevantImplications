@@ -14,8 +14,23 @@ $p-theme: (
 );
 
 // generates a colour for each in the p-theme map
-@each $item, $colour in $p-theme {
+@each $item, $color in $p-theme {
     .bg-#{$item} {
-        background-color: $colour;
+        background-color: $color;
+    }
+}
+
+
+// Buttons colors
+@each $color, $value in $p-theme {
+    .btn-#{$color}{
+        @include button-variant(
+            $value,
+            $value,
+            $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+            $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+            $active-background: shade-color($value, $btn-active-bg-shade-amount),
+            $active-border: shade-color($value, $btn-active-border-shade-amount)
+        )
     }
 }
