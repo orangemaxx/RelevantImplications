@@ -9376,6 +9376,26 @@ textarea.form-control-lg {
     mask-position: -200% 0%;
   }
 }
+.bg-brown {
+  background-color: #4a4238;
+}
+
+.bg-ash {
+  background-color: #4d5359;
+}
+
+.bg-teal {
+  background-color: #508484;
+}
+
+.bg-ill {
+  background-color: #79c99e;
+}
+
+.bg-lime {
+  background-color: #97db4f;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -14149,15 +14169,6 @@ textarea.form-control-lg {
 }
 .main-navbar {
   background-color: #4a4238;
-}
-
-.page-header {
-  width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #4d5359;
 }
 
 /*# sourceMappingURL=main.css.map */

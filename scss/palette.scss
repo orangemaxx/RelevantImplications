@@ -1,0 +1,21 @@
+$p-brown: #4a4238;
+$p-ash: #4d5359;
+$p-teal: #508484;
+$p-ill: #79c99e;
+$p-lime: #97db4f;
+// In the order of the pallete.png
+
+$p-theme: (
+    "brown": $p-brown,
+    "ash": $p-ash,
+    "teal": $p-teal,
+    "ill": $p-ill,
+    "lime": $p-lime,
+);
+
+// generates a colour for each in the p-theme map
+@each $item, $colour in $p-theme {
+    .bg-#{$item} {
+        background-color: $colour;
+    }
+}

@@ -69,6 +69,9 @@
 @import "../bootstrap/scss/offcanvas";
 @import "../bootstrap/scss/placeholders";
 
+// Custom Sass
+@import "../scss/palette.scss";
+
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../bootstrap/scss/utilities/api";
@@ -86,17 +89,13 @@
 }
 
 // Making container
-@mixin make-container($padding-x: $container-padding-x, $container-bg) {
-    width: 100%;
-    padding-right: $padding-x;
-    padding-left: $padding-x;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: $container-bg;
-}
+// @mixin make-container($padding-x: $container-padding-x, $container-bg) {
+//     width: 100%;
+//     padding-right: $padding-x;
+//     padding-left: $padding-x;
+//     margin-right: auto;
+//     margin-left: auto;
+//     background-color: $container-bg;
+// }
   
-  // Usage
-.page-header {
-    @include make-container($container-bg: #4d5359);
-}
   
