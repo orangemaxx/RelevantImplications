@@ -2,6 +2,13 @@
     "index.html": {
         "title": "Relevant Implications"
     },
+    "safety-acessability.html": {
+        "title": "Safety & Acessability",
+        "pageheader": "Acessability & Safety",
+        "description": "Placeholder",
+        "i-one": "Acessability",
+        "i-two": "Safety"
+    },
     "testone.html": {
         "title": "Test",
         "pageheader": "Testing!!",
