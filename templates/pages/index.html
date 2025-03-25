@@ -11,13 +11,13 @@
     <!-- TODO: come back and center ts grid system i actually gotta start doing stuff so i give up on this for now come back later -->
     <div class="container text-center mt-5 p-5">
         <div class="row">
-            {% for i in grid %}
+            {% for item in grid %}
             <div class="col-sm p-2">
                 <div class="card" style="width: 18rem;">
-                    <img src="/static/img/rel-impl/{{i['thumb']}}" alt="" class="card-img-top">
+                    <img src={{item['thumb']}} alt={{item}} class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">{{i}}</h5>
-                        <p class="card-text">{{i.desc}}</p>
+                        <h5 class="card-title">{{item}}</h5>
+                        <p class="card-text">{{item['desc']}}</p>
                         <a href="" class="btn btn-primary">Visit</a>
                     </div>
                 </div>
