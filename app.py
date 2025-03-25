@@ -13,16 +13,17 @@ app = Flask(__name__)
 def index():
     return "Your static site has been generated in build/"
 
-def savefile(filename, args):
+def savefile(filename, args, template):
     current_dir = os.path.dirname(__file__)
     rel_path = "/build/" + filename
     with open(current_dir + rel_path, "w") as f:
-        f.write(render_template("pages/"+filename, **args))
+        f.write(render_template("pages/"+template, **args))
 
 with app.app_context():
     for page in pages:
-        args = pages[page]
-        savefile(page, args)
+        args = pages[page]["args"]
+        template = pages[page]["template"]
+        savefile(page, args, template)
     shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
     shutil.copytree("static/", "build/static", dirs_exist_ok=True)
 
