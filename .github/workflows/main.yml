@@ -13,6 +13,9 @@ jobs:
         python-version: [3.12]
     steps:
       - uses: actions/checkout@v4
+      - name: Find Working Dir
+        run: |
+          ls -la
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
         with:
