@@ -7,6 +7,7 @@ with open("pages.json", "r") as file:
     pages = json.load(file)
 
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -16,6 +17,8 @@ def index():
 def savefile(filename, args, template):
     current_dir = os.path.dirname(__file__)
     rel_path = "/build/" + filename
+    if not os.path.exists(os.path.dirname(current_dir + rel_path)):
+        os.makedirs(os.path.dirname(current_dir + rel_path))
     with open(current_dir + rel_path, "w") as f:
         f.write(render_template("pages/"+template, **args))
 
