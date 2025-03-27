@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, redirect
 import os
 import json
 import shutil
+from flask_compress import Compress
 
 with open("pages.json", "r") as file:
     pages = json.load(file)
@@ -9,6 +10,8 @@ with open("pages.json", "r") as file:
 
 
 app = Flask(__name__)
+compress = Compress()
+compress.init_app(app)
 
 @app.route("/")
 def index():
