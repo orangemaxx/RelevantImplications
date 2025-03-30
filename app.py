@@ -38,4 +38,4 @@ with app.app_context():
         savefile(page, args, template)
     
 
-app.run(debug=True) # Only for working on it
+# app.run(debug=True) # Only for working on it Comment this out
