@@ -13,6 +13,10 @@ app = Flask(__name__)
 compress = Compress()
 compress.init_app(app)
 
+buildDir = os.path.dirname(__file__) + "/build/"
+if not os.path.exists(buildDir):
+    os.makedirs(buildDir)
+
 @app.route("/")
 def index():
     return "Your static site has been generated in build/"
@@ -26,11 +30,12 @@ def savefile(filename, args, template):
         f.write(render_template("pages/"+template, **args))
 
 with app.app_context():
+    shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
+    shutil.copytree("static/", "build/static", dirs_exist_ok=True)
     for page in pages:
         args = pages[page]["args"]
         template = pages[page]["template"]
         savefile(page, args, template)
-    shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
-    shutil.copytree("static/", "build/static", dirs_exist_ok=True)
+    
 
-app.run(debug=True)
+# app.run(debug=True) # Only for working on it
