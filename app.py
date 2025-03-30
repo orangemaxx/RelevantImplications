@@ -17,8 +17,8 @@ buildDir = os.path.dirname(__file__) + "/build/"
 if not os.path.exists(buildDir):
     os.makedirs(buildDir)
 
-@app.route("/")
-def index():
+@app.errorhandler(404)
+def index(e):
     return "Your static site has been generated in build/"
 
 def savefile(filename, args, template):
@@ -38,4 +38,4 @@ with app.app_context():
         savefile(page, args, template)
     
 
-# app.run(debug=True) # Only for working on it
+app.run(debug=True) # Only for working on it
