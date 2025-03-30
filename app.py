@@ -30,7 +30,7 @@ def savefile(filename, args, template):
         f.write(render_template("pages/"+template, **args))
 
 with app.app_context():
-    shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
+    # shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)
     shutil.copytree("static/", "build/static", dirs_exist_ok=True)
     for page in pages:
         args = pages[page]["args"]
