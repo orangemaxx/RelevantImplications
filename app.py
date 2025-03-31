@@ -28,6 +28,7 @@ def savefile(filename, args, template):
         os.makedirs(os.path.dirname(current_dir + rel_path))
     with open(current_dir + rel_path, "w") as f:
         f.write(render_template("pages/"+template, **args))
+        print("Created page: " + filename)
 
 with app.app_context():
     # shutil.copytree("bootstrap/dist/js", "static/js", dirs_exist_ok=True)

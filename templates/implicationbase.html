@@ -5,12 +5,11 @@
     <h5>{{description}}</h5>
     <div class="container">
         <div class="row">
+            {% for section_key, section_data in sections.items() %}
             <div class="col">
-                <a href="#sectionone" class="btn btn-ash btn-lg">{{ione}}</a>
+                <a href="#{{section_key}}" class="btn btn-ash btn-lg">{{section_key}}</a>
             </div>
-            <div class="col">
-                <a href="#sectiontwo" class="btn btn-ash btn-lg">{{itwo}}</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
     
