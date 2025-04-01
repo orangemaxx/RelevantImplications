@@ -16,7 +16,20 @@
 			<span>{{section_data.hero.attribution}}</span>
 		</div>
 	</div>
+	<div class="container text-center mt-0 p-5">
+		<div class="row align-items-center justify-content-center">
+	{% for example_key, example_data in section_data.examples.items() %}
+		<div class="col-sm p-2">
+			<div class="card" style="width: 30rex;">
+				<h1 class="card-title">{{example_data.type}}</h1>
+				<img src="{{example_data.image}}" alt="{{example_data.alt}}" class="card-img-top" width="90%">
+				<h3>{{example_data.description}}</h3>
+				</div>
+			</div>
+	{% endfor %}
+		</div>
+	</div>
 </div>
-{% endfor %}
 
+{% endfor %}
 {% endblock %}
