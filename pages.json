@@ -5,6 +5,39 @@
             "title": "Relevant Implications"
         }
     },
+    "page-template.html": {
+        "note": "DELETE THIS BEFORE SENDING IT IN",
+        "template": "implication.html",
+        "args": {
+            "title": "Implication Names",
+            "pageheader": "Same as title Likely",
+            "description": "Header desc",
+            "sections": {
+                "Implication Name": {
+                    "hero": {
+                        "header": "Implication Name",
+                        "body": "Body text",
+                        "image": "image",
+                        "attribution": "Attribution"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/DebugEmpty.webp",
+                            "alt": "A bad example",
+                            "description": "Placeholder"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/DebugEmpty.webp",
+                            "alt": "A good example",
+                            "description": "Placeholder"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "safety-acessability.html": {
         "template": "implication.html",
         "args": {
@@ -18,7 +51,8 @@
                         "body": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
                         "image": "/static/img/acessability.webp",
                         "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
-                    }
+                    },
+                    "examples": {}
                 },
                 "Safety": {
                     "hero": {
@@ -26,7 +60,8 @@
                         "body": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
                         "image": "/static/img/acessability.webp",
                         "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
-                    }
+                    },
+                    "examples": {}
                 }
             }
         }
