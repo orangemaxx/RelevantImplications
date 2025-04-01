@@ -2,13 +2,11 @@
 {% block implication %}
 {% for section_key, section_data in sections.items() %}
 <div class="container my-5" id="{{section_key}}">
-	<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+	<div class="row p-4 pb-5 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
 		<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 			<h1 class="display-4 fw-bold lh-1">{{section_data.hero.header}}</h1>
 			<p class="lead">{{section_data.hero.body}}</p>
 			<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-				<button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-				<button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
 			</div>
 		</div>
 		<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -17,13 +15,16 @@
 		</div>
 	</div>
 	<div class="container text-center mt-0 p-5">
-		<div class="row align-items-center justify-content-center">
+		<h2>Examples</h2>
+		<div class="row align-items-stretch justify-content-center">
 	{% for example_key, example_data in section_data.examples.items() %}
-		<div class="col-sm p-2">
-			<div class="card" style="width: 30rex;">
-				<h1 class="card-title">{{example_data.type}}</h1>
-				<img src="{{example_data.image}}" alt="{{example_data.alt}}" class="card-img-top" width="90%">
-				<h3>{{example_data.description}}</h3>
+			<div class="col-sm-6 p-2">
+				<div class="card h-100" style="width: 30rex;">
+					<h1 class="card-title">{{example_data.type}}</h1>
+					<img src="{{example_data.image}}" alt="{{example_data.alt}}" class="card-img-top" width="70%">
+					<div class="card-body p-2 d-flex align-items-center">
+						<h5>{{example_data.description}}</h5>
+					</div>
 				</div>
 			</div>
 	{% endfor %}
