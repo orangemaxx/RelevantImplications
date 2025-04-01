@@ -52,7 +52,20 @@
                         "image": "/static/img/acessability.webp",
                         "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
                     },
-                    "examples": {}
+                    "examples": {
+                        "bad": {
+                            "type":"BAD",
+                            "image":"/static/img/examples/acessability-bad.webp",
+                            "alt": "A Page from 'House Of Leaves'. This page is extremely difficult to navigate with backwards text and upsidedown text.",
+                            "description": "This is a page from Mark Z Danielewski's House of Leaves. Users with vision impairments and users with screenreaders will find extremely difficult to navigate and read because of the way the text is organised."
+                        },
+                        "good":{
+                            "type":"GOOD",
+                            "image":"/static/img/examples/acessability-good.webp",
+                            "alt": "A screenshot of html code containing labels and alt tags for images",
+                            "description": "This html code uses alt tags for images and labels for buttons. These tags are made to be used with screenreaders allowing users with vision impairments to navigate and read the site."
+                        }
+                    }
                 },
                 "Health & Safety": {
                     "hero": {
