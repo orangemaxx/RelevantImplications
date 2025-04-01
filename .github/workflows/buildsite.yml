@@ -33,6 +33,6 @@ jobs:
       - name: Run tests
         run: |
           python app.py
-          git add "build/"
+          git add -f "build/"
           git commit -m "Build Site"
           git push
