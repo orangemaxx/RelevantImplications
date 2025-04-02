@@ -90,5 +90,89 @@
                 }
             }
         }
+    },
+    "legal-copyright.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Legal & Interlectual Property",
+            "pageheader": "Legal & Interlectual Property",
+            "description": "When making your site it's important to avoid any legal trouble by following these Implications.",
+            "sections": {
+                "Legal": {
+                    "hero": {
+                        "header": "Legal",
+                        "body": "In web development, legal implications include ensuring that websites follow rules about privacy, like protecting users' personal data and complying with laws such as the GDPR. Additionally, developers must avoid copyright infringement by not using unauthorized content and respecting intellectual property rights.",
+                        "image": "/static/img/legal.webp",
+                        "attribution": "By Orginal: Chris Potter - Modifier: Ibrahim.ID - 3D Judges Gavel, CC BY 4.0, ",
+                        "attributionLink": "https://commons.wikimedia.org/w/index.php?curid=38753690"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/legal-bad.webp",
+                            "alt": "A court Gavel with a sign in front reading: PROSECUTION",
+                            "description": "Encouraging or teaching users to commit crimes or break the law is a bad idea as you may be held responsible. \nImage from Pix4Free.org"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/legal-good.webp",
+                            "alt": "A warning stating that this page has been removed for harmful content.",
+                            "description": "Alowing yourself the ability to remove any malicious content will help avoid any legal trouble as it can quickly be taken down."
+                        }
+                    }
+                },
+                "Copyright": {
+                    "hero": {
+                        "header": "Copyright / Interlectual Property",
+                        "body": "Whenever a body of work or piece of art is created it is automatically protected by copyright laws. It is important to ensure that your site does not breach these laws or you may face great fines. This can often be done by giving attribution to the original authors.",
+                        "image": "/static/img/copyright.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/copyright-bad.webp",
+                            "alt": "A youtube warning that reads: Video Removed due to copyright.",
+                            "description": "Often Using any Form of Copyrighted material can lead to ceace and desists and or large fines from the copyright owners."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/copyright-good.webp",
+                            "alt": "The creative commons logos and licences.",
+                            "description": "Using content released under creative commons licences offers a quick and clear way to use certain assets and videos with appropriate attribution. This will avoid any trouble with your website in the future."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "social-cultural.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Social & Cultural",
+            "pageheader": "Social & Cultural",
+            "sections": {
+                "Social": {
+                    "hero": {
+                        "header": "Social",
+                        "body": "Will your website have a positive impact? Does it misrepresent any groups? Will it cause offense? Age, gender and Ethnicity are all important things to concider when making your website.",
+                        "image": "/static/img/social.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/social-bad.webp",
+                            "alt": "A swearing emoji",
+                            "description": "Placeholder"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/DebugEmpty.webp",
+                            "alt": "A good example",
+                            "description": "Placeholder"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

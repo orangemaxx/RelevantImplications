@@ -12,6 +12,9 @@
 		<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
 			<img class="rounded-lg-3" src={{section_data.hero.image}} alt="" width="720">
 			<span>{{section_data.hero.attribution}}</span>
+			{% if section_data.hero.attributionLink %}
+				<a href="{{section_data.hero.attributionLink}}">Original</a>
+			{% endif %}
 		</div>
 	</div>
 	<div class="container text-center mt-0 p-5">

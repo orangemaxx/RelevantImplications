@@ -4,6 +4,6 @@ IN ORDER TO USE THE CSS FOLDER FOLLOW INSTRUCTIONS HERE: https://getbootstrap.co
 
 THEN IN PROJECT ROOT RUN `sass --watch ./scss/main.scss ./static/css/main.css` or use `css.bat` on windows
 CONVERTING PNG TO WEBP
-`ffmpeg -i "filename.png" -c:v libwebp "filename.webp"`
+`FOR %f in (*.png) DO ffmpeg -i "%f" -c:v libwebp "%~nf.webp"`
 
 <!-- TODO: READ BOOTSTRAP LICENCE, I MIGHT NOT HAVE TO DO ALLAT FOR PUSHING TO GITHUB -->
