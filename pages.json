@@ -5,63 +5,332 @@
             "title": "Relevant Implications"
         }
     },
-    "page-template.html": {
-        "note": "DELETE THIS BEFORE SENDING IT IN",
+    "safety-acessability.html": {
         "template": "implication.html",
         "args": {
-            "title": "Implication Names",
-            "pageheader": "Same as title Likely",
-            "description": "Header desc",
+            "title": "Acessability & Safety",
+            "pageheader": "Acessability & Safety",
+            "description": "WARNING: THIS PAGE CONTAINS FLASHING LIGHTS",
             "sections": {
-                "Implication Name": {
+                "Acessability": {
                     "hero": {
-                        "header": "Implication Name",
-                        "body": "Body text",
-                        "image": "image",
-                        "attribution": "Attribution"
+                        "header": "Acessability",
+                        "body": "Can your page be used by those with Vision Imparements. Can it be acessed on any device?",
+                        "image": "/static/img/acessability.webp",
+                        "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
                     },
                     "examples": {
                         "bad": {
-                            "type": "BAD",
-                            "image": "/static/img/DebugEmpty.webp",
-                            "alt": "A bad example",
-                            "description": "Placeholder"
+                            "type":"BAD",
+                            "image":"/static/img/examples/acessability-bad.webp",
+                            "alt": "A Page from 'House Of Leaves'. This page is extremely difficult to navigate with backwards text and upsidedown text.",
+                            "description": "This is a page from Mark Z Danielewski's House of Leaves. Users with vision impairments and users with screenreaders will find extremely difficult to navigate and read because of the way the text is organised."
                         },
-                        "good": {
+                        "good":{
+                            "type":"GOOD",
+                            "image":"/static/img/examples/acessability-good.webp",
+                            "alt": "A screenshot of html code containing labels and alt tags for images",
+                            "description": "This html code uses alt tags for images and labels for buttons. These tags are made to be used with screenreaders allowing users with vision impairments to navigate and read the site."
+                        }
+                    }
+                },
+                "Health & Safety": {
+                    "hero": {
+                        "header": "Health & Safety",
+                        "body": "Health & Safety is an important implication to consider when creating your website. It's important to check to ensure that users are not going to be put in danger by your site.",
+                        "image": "/static/img/safety.webp"
+                    },
+                    "examples": {
+                        "bad":{
+                            "type": "BAD",
+                            "image": "/static/img/examples/safety-bad.gif",
+                            "alt": "Strobe Light Effects Flashing in the Users Face",
+                            "description": "Unprompted Strobe Lights can negatively effect and harm users with epilepsy."
+                        },
+                        "good":{
                             "type": "GOOD",
-                            "image": "/static/img/DebugEmpty.webp",
-                            "alt": "A good example",
-                            "description": "Placeholder"
+                            "image": "/static/img/examples/safety-good.webp",
+                            "alt": "A Flashing Light Warning, It Reads: 'WARNING, THE VIDEOS BELOW MAY CONTAIN BRIGHT FLASHING LIGHTS'",
+                            "description": "A warning gives users who may be affected a good indication of whats ahead. If they know they may be harmed they can click off to avoid it."
                         }
                     }
                 }
             }
         }
     },
-    "safety-acessability.html": {
+    "legal-copyright.html": {
         "template": "implication.html",
         "args": {
-            "title": "Acessability & Safety",
-            "pageheader": "Acessability & Safety",
-            "description": "Placeholder",
+            "title": "Legal & Interlectual Property",
+            "pageheader": "Legal & Interlectual Property",
+            "description": "When making your site it's important to avoid any legal trouble by following these Implications.",
             "sections": {
-                "Acessability": {
+                "Legal": {
                     "hero": {
-                        "header": "Acessability",
-                        "body": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
-                        "image": "/static/img/acessability.webp",
-                        "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
+                        "header": "Legal",
+                        "body": "In web development, legal implications include ensuring that websites follow rules about privacy, like protecting users' personal data and complying with laws such as the GDPR. Additionally, developers must avoid copyright infringement by not using unauthorized content and respecting intellectual property rights.",
+                        "image": "/static/img/legal.webp",
+                        "attribution": "By Orginal: Chris Potter - Modifier: Ibrahim.ID - 3D Judges Gavel, CC BY 4.0, ",
+                        "attributionLink": "https://commons.wikimedia.org/w/index.php?curid=38753690"
                     },
-                    "examples": {}
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/legal-bad.webp",
+                            "alt": "A court Gavel with a sign in front reading: PROSECUTION",
+                            "description": "Encouraging or teaching users to commit crimes or break the law is a bad idea as you may be held responsible. \nImage from Pix4Free.org"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/legal-good.webp",
+                            "alt": "A warning stating that this page has been removed for harmful content.",
+                            "description": "Alowing yourself the ability to remove any malicious content will help avoid any legal trouble as it can quickly be taken down."
+                        }
+                    }
                 },
-                "Safety": {
+                "Copyright": {
                     "hero": {
-                        "header": "Safety",
-                        "body": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",
-                        "image": "/static/img/acessability.webp",
-                        "attribution": "Copyright: © 2018 Advantus Media, Inc. and QuoteInspector.com"
+                        "header": "Copyright / Interlectual Property",
+                        "body": "Whenever a body of work or piece of art is created it is automatically protected by copyright laws. It is important to ensure that your site does not breach these laws or you may face great fines. This can often be done by giving attribution to the original authors.",
+                        "image": "/static/img/copyright.webp"
                     },
-                    "examples": {}
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/copyright-bad.webp",
+                            "alt": "A youtube warning that reads: Video Removed due to copyright.",
+                            "description": "Often Using any Form of Copyrighted material can lead to ceace and desists and or large fines from the copyright owners."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/copyright-good.webp",
+                            "alt": "The creative commons logos and licences.",
+                            "description": "Using content released under creative commons licences offers a quick and clear way to use certain assets and videos with appropriate attribution. This will avoid any trouble with your website in the future."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "social-cultural.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Social & Cultural",
+            "pageheader": "Social & Cultural",
+            "sections": {
+                "Social": {
+                    "hero": {
+                        "header": "Social",
+                        "body": "Will your website have a positive impact? Does it misrepresent any groups? Will it cause offense? Age, gender and Ethnicity are all important things to concider when making your website.",
+                        "image": "/static/img/social.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/social-bad.webp",
+                            "alt": "A swearing emoji.",
+                            "description": "Using inapropriate language or slurs may offend users on your site or cause harm to these groups."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/social-good.webp",
+                            "alt": "A clipart of two people sitting and talking.",
+                            "description": "Taking time to consult people from groups who may be affected by your site will help avoid any confusion or offensive content."
+                        }
+                    }
+                },
+                "Cultural": {
+                    "hero": {
+                        "header": "Cultural",
+                        "body": "It is important to treat all cultures fairly on your website, using correct spelling, terms, etc.",
+                        "image": "/static/img/cultural.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/cultural-bad.webp",
+                            "alt": "A screenshot from google. Pakuranga College with no Macrons.",
+                            "description": "This spelling does not use Macrons in appropriate places."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/cultural-good.webp",
+                            "alt": "Pakūranga College, Screenshot from google",
+                            "description": "This spelling DOES use macrons in appropriate places and therefore respects the language and culture."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "ethical-privacy.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Ethical & Privacy",
+            "pageheader": "Ethical & Privacy",
+            "description": "Ensure that users feel safe using your site.",
+            "sections": {
+                "Ethical": {
+                    "hero": {
+                        "header": "Ethical",
+                        "body": "Is your website likely to cause harm to anyone? Does it spread misinformation or single out people. These are important things to concider to ensure your site is ethical.",
+                        "image": "/static/img/ethical.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/ethical-bad.webp",
+                            "alt": "A street sign sating FAKE NEWS",
+                            "description": "Spreading fake news and misinformation can be harmful to some groups of people. It is important to fact check information on your site before making it public. Image from Pix4Free.org"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/ethical-good.webp",
+                            "alt": "A clipart of two people sitting and talking.",
+                            "description": "Talking to others and getting your website reviewed allows them to check that the content is ethical and doesn't contain misinformation about others."
+                        }
+                    }
+                },
+                "Privacy": {
+                    "hero": {
+                        "header": "Privacy",
+                        "body": "Privacy ensures that images of people will not be made public without their permission. This should be checked befoere submitting your site.",
+                        "image": "/static/img/privacy.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/privacy-bad.webp",
+                            "alt": "A picture of a person",
+                            "description": "This is a photo of a person. If this person wants the photo removed it may be difficult after the website has been published. (Image generated by AI)"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/privacy-good.webp",
+                            "alt": "A blured picture of someone.",
+                            "description": "Bluring peoples faces or removing the image entirely allows the person to retain anonymity on your site."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "usability-functionality.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Usability & Functionality",
+            "pageheader": "Usability & Functionality",
+            "sections": {
+                "Usability": {
+                    "hero": {
+                        "header": "Usability",
+                        "body": "Can the user avoid errors when using your site. It's important to follow conventions to ensure they can.",
+                        "image": "/static/img/usability.webp"
+                    },
+                    "examples": {
+                        "good": {
+                            "type": "Usability Heuristics",
+                            "image": "/static/img/examples/usabilty-good.webp",
+                            "alt": "The Usability Heuristics",
+                            "description": "These are the Usability Heuristics which should be followed to ensure ease of use."
+                        }
+                    }
+                },
+                "Functionality": {
+                    "hero": {
+                        "header": "Functionality",
+                        "body": "Does your website load quickly are are there any bugs? Ensuring that your site works is an important step in ease of use for the user.",
+                        "image": "/static/img/functionality.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/function-bad.webp",
+                            "alt": "A Page not Found Webpage",
+                            "description": "This page has errors and the user is ending up on pages that don't exist. There are clearly issues with the code"
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/function-good.webp",
+                            "alt": "A 100 for performance on the google lighthouse tool",
+                            "description": "By testing the website using tools such as googles Lighthouse you can ensure that the website won't take too long to load. This means that users can use the site easily."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "asthetics-enduser.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Asthetics & End User Conciderations",
+            "pageheader": "Asthetics & End User Conciderations",
+            "sections": {
+                "Asthetics": {
+                    "hero": {
+                        "header": "Asthetics",
+                        "body": "Does your website look nice? Does it have a consistant colour palate and can users read text?",
+                        "image": "/static/img/asthetics.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/asthetic-bad.webp",
+                            "alt": "A bad looking colour palete",
+                            "description": "These colours look objectively bad and users may find it difficult to read text."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/asthetic-good.webp",
+                            "alt": "A good colour palete",
+                            "description": "These colours look nice together and the variation allows users to see text and important details clearly."
+                        }
+                    }
+                },
+                "End User Requirements": {
+                    "hero": {
+                        "header": "End User Requirements",
+                        "body": "Does your website meet the requirements of the people using it?",
+                        "image": "/static/img/rel-impl/end-user.webp"
+                    },
+                    "examples": {
+                        "bad": {
+                            "type": "BAD",
+                            "image": "/static/img/examples/enduser-bad.webp",
+                            "alt": "A sign that reads: ENTRANCE ONLY DO NOT ENTER",
+                            "description": "This is poorly written and confusing to read. It does not meet the requirements of the End Users."
+                        },
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/enduser-good.webp",
+                            "alt": "A screenshot of this page.",
+                            "description": "This website has simple writing, bright colours and easy to understand graphics. It meets the requirements of its end users."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "futureproofing.html": {
+        "template": "implication.html",
+        "args": {
+            "title": "Future Proofing",
+            "pageheader": "Future Proofing",
+            "sections": {
+                "Future Proofing": {
+                    "hero": {
+                        "header": "Future Proofing",
+                        "body": "Is your site easy to update and can it be easily understood by those updating it?",
+                        "image": "/static/img/rel-impl/future-proof.webp"
+                    },
+                    "examples": {
+                        "good": {
+                            "type": "GOOD",
+                            "image": "/static/img/examples/future-good.webp",
+                            "alt": "Some well documented code.",
+                            "description": "This is well documented and tells the author exactly what everything does making it easy to update and understand."
+                        }
+                    }
                 }
             }
         }
