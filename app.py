@@ -37,6 +37,7 @@ with app.app_context():
         args = pages[page]["args"]
         template = pages[page]["template"]
         savefile(page, args, template)
+    print("Site Generated in '" + buildDir + "' with no errors.")
     
 
 # app.run(debug=True) # Only for working on it Comment this out
